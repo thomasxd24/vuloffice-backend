@@ -21,7 +21,7 @@ router.get('/send',async function(req, res, next) {
   var petitColi = false
   var noprep = false
   if(req.query.petitColi) petitColi = true
-  if(req.query.noprep) noprep = true
+  if(req.query.noPrep) noprep = true
   if(req.query.orderID) result.data = await requestEtiquette(req.query.siteName,req.query.orderID,petitColi,req.query.comment)
   if(!result.data.trackingNumber) result.error = true
   if(!req.query.orderID) result.data = "Veuillez rensigner le numéro de commande"
