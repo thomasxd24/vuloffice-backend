@@ -1,0 +1,34 @@
+<div class="row">
+          
+        <div class="mt-5">
+
+            <h1>Expédition</h1>
+
+              <form action="/expedition/send" class="indigo" method="GET">
+                
+                  <div class="form-group">
+                      <select class="form-control" name="siteName">
+                          <option value="toutdeco">ToutDeco</option>
+                          <option value="destockage">Destockage-Discount</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="orderID" class="bmd-label-floating">Numero de la commande</label>
+                    <input type="text" class="form-control" name="orderID" id="orderID">
+                  </div>
+                  <div class="form-group">
+                    <label for="comment" class="bmd-label-floating">Commentaire (Faculative)</label>
+                    <input type="text" class="form-control" name="comment" id="comment">
+                  </div>
+                    <div class="switch">
+                        <label><input type="checkbox" name="petitColi" value="true" > Forcer Petit Colis</label>
+                      </div>
+                      <div class="switch">
+                        <label><input type="checkbox" name="noprep" value="true" > Ne pas mettre en Preparation en cours (Dev mode)</label>
+                      </div>
+                  <button type="submit" onclick="loadingScreen()" class="btn btn-raised btn-primary">Soumettre</button>
+                </form>
+            
+          </div>
+        
+    </div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<%- include('partials/header', {page: page}); %>
+
+<body>
+  <div id="overlay">
+    <div id="icon">
+      <div class="ld ld-ring ld-spin-fast" style="font-size:90px"></div>
+    </div>
+    <div id="text">
+
+    </div>
+  </div>
+  <!-- Navigation -->
+  <%- include('partials/nav', {page: page}); %>
+
+  <!-- Page Content -->
+  <div class="container">
+    <%- include(`pages/${page.fileName}`, {page: page}); %>
+  </div>
+
+
+
+</body>
+
+<!-- Matieral Design Bootstrap -->
+<script src="/javascripts/bootstrap-material-design.js" crossorigin="anonymous"></script>
+<script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });
+$('#datepicker').bootstrapMaterialDatePicker({ weekStart : 0, time: false });</script>
+
+
+</html>

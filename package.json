@@ -1,0 +1,32 @@
+{
+  "name": "vuloffice",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "nodemon --inspect ./bin/www"
+  },
+  
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "~1.4.3",
+    "cron": "^1.4.1",
+    "dateformat": "^3.0.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "exceljs": "^1.6.2",
+    "express": "~4.16.0",
+    "git-auto-deploy": "^1.0.6",
+    "http-errors": "~1.6.2",
+    "js2xmlparser": "^3.0.0",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.6",
+    "morgan": "~1.9.0",
+    "pdf-extract": "^1.0.11",
+    "pdf-text-extract": "^1.5.0",
+    "pdfkit": "^0.8.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "xlsx": "^0.14.0"
+  }
+}

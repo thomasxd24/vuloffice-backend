@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="mt-5">Adjouter un avoir</h1>
+      <form action="/avoir/add" method="POST">
+        <div class="form-group">
+          <select class="form-control" name="site">
+              <option value="toutdeco">ToutDeco</option>
+              <option value="destockage">Destockage-Discount</option>
+            </select>
+      </div>
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label bmd-label-floating" for="ref">Reference</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" name="ref" id="ref" value="" >
+
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label bmd-label-floating" for="date">Date de remboursement</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control"  id="datepicker" name="date" value="" >
+
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label bmd-label-floating" for="client">Client</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" name="client" id="client" value="" >
+
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label bmd-label-floating" for="total">Montant Rembourse en TTC</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" name="total" id="total" value="" >
+
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label bmd-label-floating" for="payment">Paiement</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" name="payment" id="payment" value="" >
+
+          </div>
+        </div>
+        <button type="submit" onclick="loadingScreen()" class="btn btn-raised btn-primary">Soumettre</button>
+
+      </form>
+  </div>
+</div>

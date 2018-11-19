@@ -1,0 +1,38 @@
+
+<div class="row">
+        <div class="col-lg-12">
+                
+          <div class="mt-5">
+            <a class="btn btn-raised btn-primary" href="/avoir/adjouter" role="button">Adjouter un avoir</a>
+
+            <table id="table_id" class="table table-hover table-bordered" style="width:100%"  align="center">
+              <thead>
+                  <tr>
+                    <th>Reference</th>
+                      <th>Site</th>
+                      <th>Client</th>
+                      <th>Date of Remboursement</th>
+                      <th>Paiement</th>
+                      <th>Total</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+
+
+              </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+
+  
+      <script>
+        $(document).ready( function () {
+            $('#table_id').DataTable({
+              "info": false,
+              "paging": false,
+              "ajax": 'avoir/get'
+            });
+        } );
+            </script>

@@ -1,0 +1,14 @@
+<div class="row">
+        
+        <div class="col-lg-12 text-center">
+            
+          <h1 class="mt-5">
+              <h1>Site: <%= data.shopname %> Moi: <%= data.month %> Année: <%= data.year %></h1>
+            
+          </h1>
+          
+        </div>
+      </div>
+      <div class="row">
+            <iframe src="/pdf?shopname=<%= data.shopname %>&month=<%= data.month %>&year=<%= data.year %>" height="750" width="100%" style='margin:0'></iframe>
+        </div>

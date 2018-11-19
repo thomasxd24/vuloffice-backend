@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="https://image.ibb.co/h6gDX9/153652653665068967.png" alt="Italian Trulli" height="35px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item 
+              <% if(page.title == "Accueil"){ %>
+                <%= "active" %>
+              <% } %>
+              ">
+                <a class="nav-link" href="/">Accueil
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link
+                <% if(page.title == "Expédition"){ %>
+                    <%= "active" %>
+                  <% } %>
+                " href="/expedition">Expédition</a>
+              </li>
+              <li class="nav-item
+              <% if(page.title == "Rapports"){ %>
+                <%= "active" %>
+              <% } %>
+              ">
+                <a class="nav-link
+                " href="/rapports">Rapports</a>
+              </li>
+              <!--  <li class="nav-item
+              <% if(page.title == "Prix"){ %>
+                <%= "active" %>
+              <% } %>
+              ">
+                <a class="nav-link" href="/prix">Prix</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link
+                <% if(page.title == "Ventes"){ %>
+                    <%= "active" %>
+                  <% } %>
+                " href="/ventes">Ventes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link
+                <% if(page.title == "Achats"){ %>
+                    <%= "active" %>
+                  <% } %>
+                " href="/achats">Achats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link
+                <% if(page.title == "Stock"){ %>
+                    <%= "active" %>
+                  <% } %>
+                " href="/stocks">Stock</a>
+              </li> -->
+              <li class="nav-item
+              <% if(page.title == "Avoir"){ %>
+                <%= "active" %>
+              <% } %>
+              ">
+                <a class="nav-link
+                " href="/avoir">Avoir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
